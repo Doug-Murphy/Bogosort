@@ -57,7 +57,10 @@ namespace Bogosort
 
             while (!IsListSorted(listToOperateOn))
             {
-                Console.WriteLine($"Attempts thus far: {attemptsMade:N0}");
+                if (attemptsMade % 10_000 == 0)
+                {
+                    Console.WriteLine($"Attempts thus far: {attemptsMade:N0}");
+                }
                 listToOperateOn.Clear();
                 GenerateRandomElements(listToOperateOn, listSize, ref attemptsMade);
             }
