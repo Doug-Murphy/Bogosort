@@ -57,7 +57,7 @@ namespace Bogosort
 
             while (!IsListSorted(listToOperateOn))
             {
-                if (attemptsMade % 10_000 == 0)
+                if (attemptsMade % 100_000 == 0)
                 {
                     Console.WriteLine($"Attempts thus far: {attemptsMade:N0}");
                 }
