@@ -45,7 +45,7 @@ namespace Bogosort
             if (listSize == 0)
             {
                 Console.Write("Enter how many elements you want to bogosort: ");
-                while (!int.TryParse(Console.ReadLine(), out listSize))
+                while (!int.TryParse(Console.ReadLine(), out listSize) || listSize <= 0)
                 {
                     Console.Write("Enter how many elements you want to bogosort: ");
                 }
